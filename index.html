@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <a class="score-link" href="highscores.html">View Highscores</a>
+        <h3 class="header-content">Time: <span id="timer"></span></h3>
+    </header>
+    
+    <main>
+    <div class="wrap"></div>
+        <div class="startScreen">
+        <h1>Coding Quiz!</h1>
+            <p>Test your skill!  Try your luck!  Do a coding quiz!  Now!</p>
+         <button class="startButton">Start!</button>
+    </div>
+<!-- questions -->
+    <div id="questions" class="hide">
+        <h2 id="question-title">Filler text?</h2>
+        <div id="choices" class="choices">
+            <button id ="choice1" class="button-style  answer-button">Filler 1</button>
+            <button id ="choice2" class="button-style  answer-button">Filler 2</button>
+            <button id ="choice3" class="button-style  answer-button">Filler 3</button>
+            <button id ="choice4" class="button-style  answer-button">Filler 4</button>
+        </div>
+    </div>
+    
+    <div id="end-screen" class="menuEnd">
+        <h1>Finished!</h1>
+        <p class="init-menu">Your score is <span id="final-score"></span></p>
+    </div>
+    <div id="feedback" class="hide feedback">
+        <p id="feedback">hello</p>
+    </div>
+</div>
+</main>  
+    <link rel="logic" href="logic.js">
+    <link rel="score" href="scores.js">
+</body>
+</html>
