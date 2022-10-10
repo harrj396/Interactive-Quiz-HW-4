@@ -1,5 +1,6 @@
 // variables to keep track of quiz state
   let shuffledQuestions, currentQuestion;
+  let currentQuestionIndex = 0
   var seconds = 60
 
 // my questions
@@ -13,7 +14,18 @@ var questions = [
     {text: 'four', correct: false},
   ]
   // more questions here!
-  }
+  },
+  {
+    title: 'this is my test question, pick 1!',
+    choices: [
+      {text: 'one', correct: true},
+      {text: 'two', correct: false},
+      {text: 'three', correct: false},
+      {text: 'four', correct: false},
+    ]
+    // more questions here!
+    }
+
 ]
 
 // ////////////////////////////////////////////////////////////////////////////
@@ -27,7 +39,7 @@ function startQuiz() {
   startScreenJS.classList.add('hide');
   questionsJS.classList.remove('hide');
   // un-hide questions section
-  shuffledQuestions = questions.sort(() => Math.random() -.5 )
+  // shuffledQuestions = questions.sort(() => Math.random() -.5 )
   currentQuestions = 0
 
 
@@ -36,16 +48,21 @@ function startQuiz() {
 }
 
 /// FUNCTION TO GET/SHOW EACH QUESTION ///
-function getQuestion() {
-  resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+function getQuestion() { 
+  var question = questions[currentQuestionIndex]
+  //Grab H2 with ID of question-title w/ document.element
+  // Set value of H2 = to questions.title
+  // take div id-choices to make buttons with docuemnt.create with append, loop over choices
+
+  //   resetState()
+//   showQuestion(shuffledQuestions[questions])
 }
 
-function showQuestion(questions) {
-  if (currentQuestionIndex > 3) {
+// function showQuestion(questions) {
+//   if (currentQuestionIndex > 3) {
       
-  }
-}
+//   }
+// }
   // update title with current question
 
   // clear out any old question choices
