@@ -10,7 +10,7 @@ Visit the following link and press the start button <https://harrj396.github.io/
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
 
-![image of website](assets/images/capture.png)
+![image of website](https://raw.githubusercontent.com/harrj396/Interactive-Quiz-HW-4/main/Assets/images/Capture.PNG)
 
 ## Credits
 
