@@ -31,13 +31,14 @@ var questions = [
 // ////////////////////////////////////////////////////////////////////////////
   // variables to reference DOM
 var questionsJS = document.querySelector('.questionSection');
-
+var startScreenJS = document.querySelector('.startScreen')
+var questionsSectionJS = document.querySelector('.questionsSection')
 
 /// FUNCTION TO START THE QUIZ
 function startQuiz() {
   
   startScreenJS.classList.add('hide');
-  questionsJS.classList.remove('hide');
+  questionsSectionJS.classList.remove('hide');
   currentQuestions = 0
 
   clockTick();
