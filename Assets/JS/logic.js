@@ -29,8 +29,8 @@ var questions = [
 ]
 
 // ////////////////////////////////////////////////////////////////////////////
-  // variables to reference DOM elements
-var questionsJS = document.getElementById('questions');
+  // variables to reference DOM
+var questionsJS = document.querySelector('.questionSection');
 
 
 /// FUNCTION TO START THE QUIZ
@@ -38,10 +38,7 @@ function startQuiz() {
   
   startScreenJS.classList.add('hide');
   questionsJS.classList.remove('hide');
-  // un-hide questions section
-  // shuffledQuestions = questions.sort(() => Math.random() -.5 )
   currentQuestions = 0
-
 
   clockTick();
   getQuestion();

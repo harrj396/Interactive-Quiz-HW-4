@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz!</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
 </head>
 
 <body>
@@ -19,26 +19,26 @@
     <div class="wrap"></div>
         <div class="startScreen">
         <h1>Coding Quiz!</h1>
-            <p>Test your skill!  Try your luck!  Do a coding quiz!  Now!</p>
-         <button class="startButton">Start!</button>
+            <p>Test your knowledge with these coding questions!</p>
+         <button class="startButton" onclick="startQuiz()">Start!</button>
     </div>
 <!-- questions -->
-    <div id="questions" class="hide">
+    <div id="questionSection" class="hide">
         <h2 id="question-title"></h2>
         <div id="choices" class="choices">
         </div>
     </div>
     
-    <div id="end-screen" class="menuEnd">
+    <div id="end-screen" class="hide">
         <h1>Finished!</h1>
         <p class="init-menu">Your score is <span id="final-score"></span></p>
     </div>
-    <div id="feedback" class="hide feedback">
+    <div id="feedback" class="hide">
         <p id="feedback">hello</p>
     </div>
 </div>
 </main>  
-    <link rel="logic" href="logic.js">
-    <link rel="score" href="scores.js">
+    <link rel="logic" href="./Assets/JS/logic.js">
+    <link rel="score" href="./Assets/JS/scores.js">
 </body>
 </html>
